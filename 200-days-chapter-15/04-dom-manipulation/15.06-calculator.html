@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Calculator: dom manipulation</title>
+	<link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+	<script src="../vendor/jquery-1.6.1.min.js"></script>
+	<script src="calculator.js"></script>
+</head>
+<body>
+	<!-- Script 15.6 - calculator.html #2 -->
+<h1>Widget Cost Calculator</h1>
+<p id="results"></p>
+<form action="calculator.php" method="post" id="calculator">
+	<p id="quantityP">
+		Quantity: 
+		<input type="text" name="quantity" id="quantity" />
+		<span class="errorMessage" id="quantityError">Please enter a valid quantity!</span>
+	</p>
+	<p id="priceP">
+		Price: 
+		<input type="text" name="price" id="price" />
+		<span class="errorMessage" id="priceError">Please enter a valid price!</span>
+	</p>
+	<p id="taxP">
+		Tax (%): 
+		<input type="text" name="tax" id="tax" />
+		<span class="errorMessage" id="taxError">Please enter a valid tax!</span>
+	</p>
+	<p>
+		<input type="submit" name="submit" id="submit" value="Calculate!" />
+	</p>
+</form>
+</body>
+</html>
